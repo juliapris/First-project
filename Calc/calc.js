@@ -11,7 +11,7 @@ function calc (a, b, operator) {
     } else if (operator === "sub") {
     result = a - b;
     } else if (operator === "divide") {
-    if (b === 0) {
+        if (b === 0) {
     result ="Ошибка. Делить на ноль нельзя.";
     } else {
     result = a/b;
@@ -20,8 +20,8 @@ function calc (a, b, operator) {
     result = a*b;
     }
 
-    return result;
+return result;
 
 
 }
-console.log(calc(a:5,b:0,operator:"divide")); 
+console.log(calc(a: 5, b: 0, operator: "divide")); 
