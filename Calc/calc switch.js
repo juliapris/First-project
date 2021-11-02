@@ -1,7 +1,7 @@
 "use strict";
 function calc (a, b, operator) {
     let result;
-    const isNotValid = ( !a || !b || (typeof a !== number) || (typeof b !== number) );
+    const isNotValid = ( !a || !b || (typeof a != "number") || (typeof b != "number") );
         if (isNotValid) {
     result = "Ошибка";
     } else if (!operator) {
@@ -24,4 +24,4 @@ return result;
 
 
 }
-console.log(calc(5,5,"multip")); 
+console.log(calc(a: 5, b: 0, operator: "divide")); 
